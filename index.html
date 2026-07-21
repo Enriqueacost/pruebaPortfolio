@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Desarrollador</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">&lt;Dev/&gt;</a>
+      <ul class="nav-menu">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span class="highlight">Enrique</span></h1>
+      <p class="hero-subtitle">Desarrollador de Software</p>
+      <p class="hero-desc">Construyo aplicaciones web modernas y eficientes.</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contact" class="btn btn-outline">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Soy un desarrollador apasionado por la tecnología y la creación de soluciones digitales. Me especializo en el desarrollo de aplicaciones web modernas, combinando buenas prácticas de diseño y código limpio.</p>
+          <p>Disfruto aprender nuevas tecnologías y enfrentar desafíos que me permitan crecer profesionalmente. Mi objetivo es crear productos que marquen la diferencia.</p>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="avatar-placeholder">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-shopping-cart"></i>
+          </div>
+          <h3>E-Commerce App</h3>
+          <p>Aplicación de comercio electrónico con carrito de compras, autenticación y panel de administración.</p>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <h3>Weather Dashboard</h3>
+          <p>Dashboard climático con datos en tiempo real, gráficos interactivos y pronóstico semanal.</p>
+          <div class="project-tech">
+            <span>Vue.js</span>
+            <span>API REST</span>
+            <span>Chart.js</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Task Manager</h3>
+          <p>Gestor de tareas con tablero Kanban, colaboración en tiempo real y notificaciones.</p>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>Socket.io</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-small"><i class="fab fa-github"></i> Código</a>
+            <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact-subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
+      <div class="contact-content">
+        <form class="contact-form" id="contact-form">
+          <input type="text" placeholder="Tu nombre" required>
+          <input type="email" placeholder="Tu email" required>
+          <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <span>enrique@email.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <span>github.com/enrique</span>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/enrique</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Enrique. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
