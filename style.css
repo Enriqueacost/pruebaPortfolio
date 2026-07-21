@@ -434,6 +434,26 @@ body {
   color: #60a5fa;
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+  .about-content {
+    gap: 2rem;
+  }
+
+  .contact-content {
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
 /* Mobile */
 @media (max-width: 768px) {
   .nav-menu {
@@ -456,16 +476,40 @@ body {
     text-align: center;
   }
 
+  .nav-menu a {
+    display: block;
+    padding: 0.8rem 0;
+  }
+
   .nav-toggle {
     display: block;
   }
 
+  .hero {
+    padding: 100px 20px 0;
+  }
+
   .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
   }
 
   .about-content,
@@ -478,16 +522,119 @@ body {
   }
 
   .avatar-placeholder {
-    width: 200px;
-    height: 200px;
-    font-size: 3.5rem;
+    width: 180px;
+    height: 180px;
+    font-size: 3rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .skills {
+    justify-content: center;
   }
 
   .section {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 
   .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer {
+    padding: 1.5rem;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  .hero h1 {
     font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .nav-container {
+    padding: 0.8rem 16px;
+  }
+
+  .nav-logo {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .btn-small {
+    text-align: center;
+  }
+
+  .contact-content {
+    gap: 1.5rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .avatar-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 2.5rem;
+  }
+
+  .section-title::after {
+    width: 40px;
+  }
+
+  .footer-links {
+    gap: 1rem;
+  }
+}
+
+/* Landscape phones */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: 120vh;
+    padding: 80px 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
